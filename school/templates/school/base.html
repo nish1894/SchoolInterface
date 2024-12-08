@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Interface</title>
+</head>
+
+<body>
+    <h1>Welcome to the School Interface</h1>
+    <nav>
+        <a href="{% url 'students' %}">Students</a>
+        <a href="{% url 'teachers' %}">Teachers</a>
+        <a href="{% url 'classrooms' %}">Classrooms</a>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
